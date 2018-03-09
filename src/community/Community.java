@@ -40,7 +40,7 @@ public class Community {
 
 	@Override
 	public String toString() {
-		return "Community [name=" + name + ", description=" + description
+		return "\nCommunity [name=" + name + ", description=" + description
 				+ ", admin=" + admin + ", members=" + members + "]";
 	}
 	

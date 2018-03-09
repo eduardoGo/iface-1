@@ -13,13 +13,13 @@ public class UserInputHandler {
 	}
 	
 	public int profileEditHandler(){
-		
-		int choice = input.nextInt();
-		while(choice < 1 || choice > 3){
+		String choi = input.nextLine();
+		int choice = Integer.parseInt(choi);
+		while(choice < 1 || choice > 5){
 			System.out.println("Invalid input, try again: ");
-			choice = input.nextInt();
+			choi = input.nextLine();
+			choice = Integer.parseInt(choi);
 		}
-		
 		return choice;
 	}
 	
