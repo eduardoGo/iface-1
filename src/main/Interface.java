@@ -44,8 +44,11 @@ public class Interface {
 			    	choice = inputer.nextLine();
 			    	password = Integer.parseInt(choice);
 			    	logged = manager.login(login, password);
+			    	
+			    	User userAux = manager.searchUser(login);
+			    	
 			    	while(logged)
-			    	    logged = loggedInScreen(manager.searchUser(login), manager);
+			    	    logged = loggedInScreen(userAux, manager);
 			    	break;
 			    case 2:
 			    	manager.addUser();

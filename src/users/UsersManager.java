@@ -170,9 +170,10 @@ public class UsersManager {
 	public boolean login(String login, long password) {
 		for(User currentUser: users) {
 			if(login.equals(currentUser.getLogin())) {
-				if(password == currentUser.getPassword())
+				if(password == currentUser.getPassword()) {
 					System.out.println("User loged in, welcome " + currentUser.getName());
 				    return true;
+				 }
 			}
 		}
 		System.out.println("Invalid user or password");
